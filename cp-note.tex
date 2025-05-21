@@ -1,0 +1,66 @@
+\documentclass{cpnote}
+
+\begin{document}
+\title{Notes for competitive programming}
+\author{James Sungarda}
+\date{\today}
+\maketitle
+
+\section{Useful algorithms}
+
+\subsection{Binary exponentiation}
+The calculation \(a^b\) can be calculated as \(a^{{b/2}^2}\) for \emph{even} b or \(a^{{b/2}^2 + 1}\) for \emph{odd} b. \\
+We do this recursively and thus the time complexity is \(O(\log b)\).
+
+\begin{minted}{cpp}
+long long binpow(long long a, long long b) {
+    long long result = 1;
+
+    while (b > 0) {
+        if (b % 2 == 1) result *= a;
+
+        a *= a;
+        b /= 2;
+    }
+
+    return result;
+}
+\end{minted}
+
+Note: The recursive version is a more intuitive way to understand the algorithm, but for efficiency sake we will be using the iterative version.\\
+The idea of the iterative version works by the realizing that every number \(b\) can be represented in binary. \\
+\textit{e.g.} \(b = 13\) can be represented as \(1101_2\) which is equal to \(2^3 + 2^2 + 2^0\). \\
+Thus we "multiply" result for every 1 in the binary representation of \(b\).
+
+\subsection{Binary search}
+Binary search works by having two pointers \emph{left} and \emph{right} that point to the first and last elements of the array respectively. \\
+The time complexity is \(O(\log n)\).
+\begin{minted}{cpp}
+int binary_search(int arr[], int n, int x) {
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == x) return mid;
+        if (arr[mid] < x) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1; // not found
+}
+\end{minted}
+
+\section{Useful snippets}
+\subsection{Fast input/output}
+Contains other ease of use functions.
+\begin{minted}{cpp}
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define fastio ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+int32_t main() {
+    fastio;
+
+    // Your code here
+}
+\end{minted}
+\end{document}
