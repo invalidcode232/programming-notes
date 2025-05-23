@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1747833695.79722 "cp-note.xdv" "cp-note.pdf" "cp-note" 1747833696.04846 0
-  "cp-note.xdv" 1747833695.77178 24548 e7f79738bea914a9a8fa2b664d83846a "xelatex"
+["xdvipdfmx"] 1747966719.32005 "cp-note.xdv" "cp-note.pdf" "cp-note" 1747966719.6895 0
+  "cp-note.xdv" 1747966719.29103 45828 8b6a246479b8e000f6b1e3bd4015aa6b "xelatex"
   (generated)
   "cp-note.pdf"
   (rewritten before read)
-["xelatex"] 1747833695.4407 "/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex" "cp-note.xdv" "cp-note" 1747833696.04791 0
-  "/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex" 1747833694.58389 1925 a77db6ff05feb8ce345fa6fac3b065dd ""
+["xelatex"] 1747966718.89891 "/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex" "cp-note.xdv" "cp-note" 1747966719.6889 0
+  "/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex" 1747966718.71287 4165 4f0e884504a02f8cb4b2a179ed2a6335 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1710106625 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -66,9 +66,10 @@
   "_minted-cp-note/3C3237225B80A2772123680C683666BD551C79C203EC0100B4EAAC10798C1168.pygtex" 1747833695.31627 1162 cf47bbe17fa31fd432358f2e2e70c073 ""
   "_minted-cp-note/88CB1ACD2992F31EFA4246A65FFB14FB551C79C203EC0100B4EAAC10798C1168.pygtex" 1747833695.3767 1809 1154e760e8666ca8b852d276a9b22ffd ""
   "_minted-cp-note/B5F7EB33AEDA40451D750E71D782315B551C79C203EC0100B4EAAC10798C1168.pygtex" 1747832675.79963 560 9e9b62cfa822856d83a1b543d9f26136 ""
+  "_minted-cp-note/D6351873AA34AEC985C9C86E68BF8D33551C79C203EC0100B4EAAC10798C1168.pygtex" 1747875153.90628 2163 e0b21c1556bab808958e43dd0e0fb79a ""
   "_minted-cp-note/default.pygstyle" 1747831349.43493 6428 74aba51736a5bc6590f8f7dd413c6f27 ""
-  "cp-note.aux" 1747833695.76305 843 caaca8d4e8197cb00e7e4972e575ed5b "xelatex"
-  "cp-note.tex" 1747833694.58389 1925 a77db6ff05feb8ce345fa6fac3b065dd ""
+  "cp-note.aux" 1747966719.27974 1684 04f587d5e5be06d1ba3b1ca348a88157 "xelatex"
+  "cp-note.tex" 1747966718.71287 4165 4f0e884504a02f8cb4b2a179ed2a6335 ""
   "cpnote.cls" 1747833312.1911 551 77ce0daf3c81c68bccd8bf98f42298a9 ""
   (generated)
   "cp-note.aux"

@@ -48,6 +48,66 @@ int binary_search(int arr[], int n, int x) {
 }
 \end{minted}
 
+\section{Concepts}
+\subsection{Bitwise operators}
+Used to manipulate bits of numbers.
+
+\begin{itemize}
+    \item \textbf{AND} \& : 1 if both bits are 1
+    \item \textbf{OR} $|$ : 1 if at least one bit is 1
+    \item \textbf{XOR} $\wedge$ : 1 if bits are different
+    \item \textbf{NOT} $\sim$ : flips the bits
+    \item \textbf{Left shift} $\ll$ : shifts bits to the left
+    \item \textbf{Right shift} $\gg$ : shifts bits to the right
+\end{itemize}
+
+\subsubsection{Multiplication and division by 2}
+Multiplication and division by 2 can be done by using left and right shift respectively. \\
+\textit{e.g.} An integer \(a = 11\) can be represented in binary as \(01011_2\), or \(2^3 + 2^1 + 2^0 = 11\).
+Multiplying \(a\) by 2 can be done by shifting the bits to the left by 1: \\
+\(01011_2 \ll 1 = 10110_2\) which is equal to \(2^{3 + 1} + 2^{1 + 1} + 2^{0 + 1} = 2^4 + 2^2 + 2^1 = 22\). \\
+
+\subsubsection{Even and odd numbers}
+An integer \(a\) is even if \(a \& 1 = 0\) and odd if \(a \& 1 = 1\). \\
+This is because the last bit of an integer is 1 if it is odd and 0 if it is even. 
+
+\subsubsection{Fast division}
+Fast division is done by using bitwise operators. \\
+The idea is to use the fact that \(a / b\) can be represented as \(a \times (b^{-1})\). \\
+We can use the \texttt{binpow} function to calculate \(b^{-1}\) as \(b^{MOD - 2}\) where MOD is a prime number. \\
+
+This is done by using Fermat's little theorem which states that if \(p\) is a prime number and \(a\) is an integer not divisible by \(p\), then \(a^{p-1} \equiv 1 \mod p\). \\
+Thus, we can calculate \(a^{-1} \equiv a^{p-2} \mod p\).
+
+\begin{minted}{cpp}
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define int long long
+
+const int MOD = 1e9 + 7;
+int binpow(int a, int b) {
+    int result = 1;
+    while (b > 0) {
+        if (b % 2 == 1) result = (result * a) % MOD;
+        a = (a * a) % MOD;
+        b /= 2;
+    }
+    return result;
+}
+
+int fast_div(int a, int b) {
+    return (a * binpow(b, MOD - 2)) % MOD;
+}
+\end{minted}
+
+\section{Data Structures}
+\subsection{Stack}
+Stack follows the \emph{LIFO} (Last In First Out) principle. \\
+When a new element is inserted, it will be put first. Similarly, 
+Last element added is the first element to be removed. \\
+
 \section{Useful snippets}
 \subsection{Fast input/output}
 Contains other ease of use functions.

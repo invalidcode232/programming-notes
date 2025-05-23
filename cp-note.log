@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  21 MAY 2025 21:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  23 MAY 2025 10:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -351,12 +351,28 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 )
 \openout3 = `cp-note.pyg'.
 
- (./_minted-cp-note/88CB1ACD2992F31EFA4246A65FFB14FB551C79C203EC0100B4EAAC10798C1168.pygtex)
+ (./_minted-cp-note/88CB1ACD2992F31EFA4246A65FFB14FB551C79C203EC0100B4EAAC10798C1168.pygtex) [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+ []
+
 \openout3 = `cp-note.pyg'.
 
- (./_minted-cp-note/B5F7EB33AEDA40451D750E71D782315B551C79C203EC0100B4EAAC10798C1168.pygtex [1
+(./_minted-cp-note/D6351873AA34AEC985C9C86E68BF8D33551C79C203EC0100B4EAAC10798C1168.pygtex [2])
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
-]) [2] (./cp-note.aux)
+ []
+
+\openout3 = `cp-note.pyg'.
+
+(./_minted-cp-note/B5F7EB33AEDA40451D750E71D782315B551C79C203EC0100B4EAAC10798C1168.pygtex) [3] (./cp-note.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -365,12 +381,12 @@ runsystem(rm cp-note.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 6780 strings out of 474773
- 130198 string characters out of 5747932
- 1929839 words of memory out of 5000000
- 28824 multiletter control sequences out of 15000+600000
- 562013 words of font info for 60 fonts, out of 8000000 for 9000
+ 6793 strings out of 474773
+ 130972 string characters out of 5747932
+ 1930839 words of memory out of 5000000
+ 28832 multiletter control sequences out of 15000+600000
+ 562021 words of font info for 61 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,95p,378b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,95p,469b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cp-note.xdv (2 pages, 24548 bytes).
+Output written on cp-note.xdv (3 pages, 45828 bytes).
