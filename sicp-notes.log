@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  23 MAY 2025 10:18
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  24 MAY 2025 12:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex
-(/Users/jamessungarda/Documents/dev/cp-notes/cp-note.tex
+**/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex
+(/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(./cpnote.cls
-Document Class: cpnote cpnote
+(./notes.cls
+Document Class: notes notes
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/size10.clo
@@ -221,10 +221,10 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "cp-note.w18")...executed.
+runsystem(uname -s > "sicp-notes.w18")...executed.
 
- (./cp-note.w18)
-runsystem(rm -- "cp-note.w18")...executed.
+ (./sicp-notes.w18)
+runsystem(rm -- "sicp-notes.w18")...executed.
 
 ) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xstring/xstring.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xstring/xstring.tex
 \xs_counta=\count304
@@ -254,7 +254,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks28
 \c@listing=\count309
 )
-runsystem(mkdir -p _minted-cp-note)...executed.
+runsystem(mkdir -p _minted-sicp-notes)...executed.
 
 ) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
@@ -274,9 +274,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-runsystem(command -v pygmentize && touch cp-note.aex)...executed.
+runsystem(command -v pygmentize && touch sicp-notes.aex)...executed.
 
-runsystem(rm cp-note.aex)...executed.
+runsystem(rm sicp-notes.aex)...executed.
 
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
@@ -285,8 +285,8 @@ File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
 \g__pdf_backend_object_int=\count311
 \g__pdf_backend_annotation_int=\count312
 \g__pdf_backend_link_int=\count313
-) (./cp-note.aux)
-\openout1 = `cp-note.aux'.
+) (./sicp-notes.aux)
+\openout1 = `sicp-notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -343,50 +343,21 @@ LaTeX Font Info:    ... okay on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout3 = `cp-note.pyg'.
+[1
 
-(./_minted-cp-note/default.pygstyle) (./_minted-cp-note/3C3237225B80A2772123680C683666BD551C79C203EC0100B4EAAC10798C1168.pygtex
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-)
-\openout3 = `cp-note.pyg'.
-
- (./_minted-cp-note/88CB1ACD2992F31EFA4246A65FFB14FB551C79C203EC0100B4EAAC10798C1168.pygtex) [1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
-
- []
-
-\openout3 = `cp-note.pyg'.
-
-(./_minted-cp-note/D6351873AA34AEC985C9C86E68BF8D33551C79C203EC0100B4EAAC10798C1168.pygtex [2])
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-
- []
-
-\openout3 = `cp-note.pyg'.
-
-(./_minted-cp-note/B5F7EB33AEDA40451D750E71D782315B551C79C203EC0100B4EAAC10798C1168.pygtex) [3] (./cp-note.aux)
+] (./sicp-notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-runsystem(rm cp-note.pyg)...executed.
-
  ) 
 Here is how much of TeX's memory you used:
- 6793 strings out of 474773
- 130972 string characters out of 5747932
- 1930839 words of memory out of 5000000
- 28832 multiletter control sequences out of 15000+600000
- 562021 words of font info for 61 fonts, out of 8000000 for 9000
+ 6617 strings out of 474773
+ 126513 string characters out of 5747932
+ 1919839 words of memory out of 5000000
+ 28688 multiletter control sequences out of 15000+600000
+ 561503 words of font info for 51 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,95p,469b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,95p,301b,202s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cp-note.xdv (3 pages, 45828 bytes).
+Output written on sicp-notes.xdv (1 page, 1808 bytes).

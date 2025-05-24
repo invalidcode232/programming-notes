@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cpnote}[cpnote]
+\ProvidesClass{notes}[notes]
 
 % Base this class on article
 \LoadClass{article}
