@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1748062394.4927 "sicp-notes.xdv" "sicp-notes.pdf" "sicp-notes" 1748062394.72153 0
-  "sicp-notes.xdv" 1748062394.44754 1808 7381fb66af442b89e9e08eb897a6f1c6 "xelatex"
+["xdvipdfmx"] 1748063493.7219 "sicp-notes.xdv" "sicp-notes.pdf" "sicp-notes" 1748063493.96472 0
+  "sicp-notes.xdv" 1748063493.69525 37884 5124b2ee04631f540f74830f42bb8ac9 "xelatex"
   (generated)
   "sicp-notes.pdf"
   (rewritten before read)
-["xelatex"] 1748062394.07188 "/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex" "sicp-notes.xdv" "sicp-notes" 1748062394.72097 0
-  "/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex" 1748062362.91605 147 d8b444d28bb65e1b47ff843f68ff02b6 ""
+["xelatex"] 1748063493.30031 "/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex" "sicp-notes.xdv" "sicp-notes" 1748063493.96417 0
+  "/Users/jamessungarda/Documents/dev/cp-notes/sicp-notes.tex" 1748063493.09567 4298 323b279f9052e835ad9aa86ee17b87e6 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1710106625 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -63,9 +63,12 @@
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1710106625 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-var/web2c/xetex/xelatex.fmt" 1710106625 10850488 395214b4fce90ba11c47b928ee957713 ""
+  "_minted-sicp-notes/8F1EA3481C9D09AD96A2C5478ABC308168624E494D9F8CA008BB7AFC63463AE6.pygtex" 1748062974.03339 157 cc1eecfccd9853c86cc2408438902728 ""
+  "_minted-sicp-notes/B4D1278BC8192F8941F426AB6503297C68624E494D9F8CA008BB7AFC63463AE6.pygtex" 1748062766.21966 598 9fa470f7d8ef3e8b97154ec16239941a ""
+  "_minted-sicp-notes/default.pygstyle" 1748062766.14874 6428 74aba51736a5bc6590f8f7dd413c6f27 ""
   "notes.cls" 1748062337.6708 549 8f2f3c7d6c84d321a6927f315e0ae813 ""
-  "sicp-notes.aux" 1748062394.44573 32 3985256e7290058c681f74d7a3565a19 "xelatex"
-  "sicp-notes.tex" 1748062362.91605 147 d8b444d28bb65e1b47ff843f68ff02b6 ""
+  "sicp-notes.aux" 1748063493.68545 1352 3564e4f8bd56d6d75ba94e636043017c "xelatex"
+  "sicp-notes.tex" 1748063493.09567 4298 323b279f9052e835ad9aa86ee17b87e6 ""
   (generated)
   "sicp-notes.aux"
   "sicp-notes.log"

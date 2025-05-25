@@ -1,10 +1,85 @@
 \documentclass{notes}
 
 \begin{document}
-\title{Notes for competitive programming}
+\title{SICP Notes}
 \author{James Sungarda}
 \date{\today}
 \maketitle
+
+\section{Programming Languages}
+Programming languages combine simple ideas to complex ideas, they are composed of:
+\begin{itemize}
+    \item \textbf{Primitive expressions} - the simplest elements of a language, such as \emph{numbers and variables}.
+    \item \textbf{Compound expressions} - combinations of primitive expressions that \emph{produce new values}, such as arithmetic operations.
+    \item \textbf{Evaluation rules} - the rules that define how expressions are evaluated to produce values.
+    \item \textbf{Environment} - the context in which expressions are evaluated, including variable \emph{bindings} and function \emph{definitions}.
+\end{itemize}
+
+\section{Evaluating methods}
+\subsection{Substitution Model}
+The substitution model is a method of evaluating expressions by replacing variables with their values. It involves:
+\begin{itemize}
+    \item Identifying the variables in an expression.
+    \item Replacing each variable with its corresponding value.
+    \item Simplifying the resulting expression until a final value is obtained.
+\end{itemize}
+
+\subsection{Normal Order Evaluation}
+Normal order evaluation is a strategy for evaluating expressions where the outermost expressions are evaluated first. It involves:
+\begin{itemize}
+    \item Delaying the evaluation of expressions until their values are needed.
+    \item Ensuring that expressions are evaluated in a way that avoids unnecessary computations.
+    \item Allowing for the evaluation of expressions that may not terminate under other evaluation strategies. (See 2.2.1)
+\end{itemize}
+\textbf{Key idea} in this strategy is that it evaluates arguments \emph{only when they are needed}, which can lead to more efficient computations in some cases.
+
+\subsubsection{Implications of each strategy}
+Consider the following program
+\begin{minted}{js}
+function p() { return p(); }
+
+function test(x, y) {
+    return x === 0 ? 0 : y;
+}
+\end{minted}
+In this example, the function \texttt{p} will lead to an infinite loop if evaluated, while the function \texttt{test} will return 0 if \texttt{x} is 0, otherwise it returns \texttt{y}. \\
+The implications of evaluation strategies can lead to different outcomes based on how expressions are evaluated.
+
+\begin{itemize}
+    \item \textbf{Substitution Model} would lead to an infinite loop when evaluating \texttt{p()}.
+    \item \textbf{Normal Order Evaluation} would also lead to an infinite loop for \texttt{p()} but would allow \texttt{test(0, 5)} to return 0 without evaluating \texttt{y}.
+\end{itemize}
+
+\section{Conditional Expressions}
+Consider the following expression:
+\begin{minted}{js}
+p ? x : y
+\end{minted}
+\begin{itemize}
+    \item \texttt{p} is a \textbf{predicate} that evaluates to either true or false.
+    \item \texttt{x} is the \textbf{consequent} that is evaluated if \texttt{p} is true.
+    \item \texttt{y} is the \textbf{alternative} that is evaluated if \texttt{p} is false.
+\end{itemize}
+The interpreter starts by evaluating the predicate \texttt{p}. \\ 
+If \texttt{p} is true, it evaluates and returns \texttt{x}; if \texttt{p} is false, it evaluates and returns \texttt{y}. 
+
+\subsection{Predicates}
+Primitive predicates include \(>=\), \(>\), \(=\), \(<=\), and \(<\). These predicates are used to compare values and return a boolean result (true or false).
+\subsubsection{Compound Predicates}
+Compound predicates are formed by combining primitive predicates using logical operators such as \texttt{and}, \texttt{or}, and \texttt{not}. These operators allow for more complex conditions to be evaluated.
+
+\section{Functions as building blocks}
+Functions are \emph{black boxes} that take inputs and produce outputs, and suppresses the details of how they work. \\
+The parameters of a function are local to the body of the function.
+
+\subsection{Best practice}
+Consider a function \texttt{sqrt(x)} which uses Newton's method to compute the square root of \(x\):\\
+It contains several helper functions \texttt{\(average(x, y)\)} and \texttt{\(good\_enough(guess, x)\)}.
+These helper functions should be defined \emph{within} the body of \texttt{sqrt(x)}.\\
+The end-user should not need to know about these helper functions.
+
+
+
 
 
 \end{document}

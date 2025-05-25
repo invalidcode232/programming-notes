@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  24 MAY 2025 12:53
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.29)  24 MAY 2025 13:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -343,21 +343,31 @@ LaTeX Font Info:    ... okay on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+\openout3 = `sicp-notes.pyg'.
 
-] (./sicp-notes.aux)
+(./_minted-sicp-notes/default.pygstyle) (./_minted-sicp-notes/B4D1278BC8192F8941F426AB6503297C68624E494D9F8CA008BB7AFC63463AE6.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+) [1
+
+]
+\openout3 = `sicp-notes.pyg'.
+
+ (./_minted-sicp-notes/8F1EA3481C9D09AD96A2C5478ABC308168624E494D9F8CA008BB7AFC63463AE6.pygtex) [2] (./sicp-notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+runsystem(rm sicp-notes.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 6617 strings out of 474773
- 126513 string characters out of 5747932
- 1919839 words of memory out of 5000000
- 28688 multiletter control sequences out of 15000+600000
- 561503 words of font info for 51 fonts, out of 8000000 for 9000
+ 6782 strings out of 474773
+ 129902 string characters out of 5747932
+ 1929839 words of memory out of 5000000
+ 28826 multiletter control sequences out of 15000+600000
+ 562029 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,95p,301b,202s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,95p,306b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on sicp-notes.xdv (1 page, 1808 bytes).
+Output written on sicp-notes.xdv (2 pages, 37884 bytes).
