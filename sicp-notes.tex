@@ -76,10 +76,48 @@ The parameters of a function are local to the body of the function.
 Consider a function \texttt{sqrt(x)} which uses Newton's method to compute the square root of \(x\):\\
 It contains several helper functions \texttt{\(average(x, y)\)} and \texttt{\(good\_enough(guess, x)\)}.
 These helper functions should be defined \emph{within} the body of \texttt{sqrt(x)}.\\
-The end-user should not need to know about these helper functions.
+The end-user need not need to know about these helper functions. 
 
+\subsubsection{Block structures}
+\begin{itemize}
+    \item Any pair of braces designates a \emph{block}, and the nesting of declarations are called \emph{block structures}. 
+    \item As the variable \texttt{x} is bound within the block of \texttt{sqrt(x)}, it is accessible by all functions inside it (and as such explicit passings are unnecessary), such practice is known as \textit{lexical scoping}.\\
+\end{itemize}
 
+\section{Functions}
+\subsection{Linear Recursion and Iteration}
+The factorial function can be defined in two ways:
+\begin{minted}{js}
+function factorial(n) {
+    return n === 1 ? 1 : n * factorial(n - 1);
+}
+\end{minted}
 
+or alternatively,
+\begin{minted}{js}
+function factorial(n) {
+    return fact_iter(1, 1, n);
+}
+function fact_iter(product, counter, max_count) {
+    return counter > max_count
+           ? product
+           : fact_iter(counter * product,
+                       counter + 1,
+                       max_count);
+}
+\end{minted}
 
+Both of these structures are \emph{syntactically recursive}, however the first is a \emph{linear recursive} model
+while the other is an \emph{iterative} model.
+
+The two models differ in how they handle the recursive calls:
+\begin{itemize}
+    \item \textbf{Linear Recursion} - Each recursive call waits for the result of the next call before proceeding, 
+        leading to a stack of calls (deferred operations) that can grow large for deep recursion. 
+    \item \textbf{Iteration} - The function maintains a state (which is fixed) and updates it in each iteration, avoiding the need for multiple stack frames and thus being more memory efficient.
+        This state provides a clear description of the state of process at any point
+\end{itemize}
+Crucially, languages such as JavaScript does not have this memory issue where the amount of memory grows with function calls.\\
+This property is known as \emph{tail-recursive} and will execute recursive calls in constant space.
 
 \end{document}
