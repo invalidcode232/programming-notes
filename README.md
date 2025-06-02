@@ -4,23 +4,9 @@ A collection of LaTeX notes for competitive programming and computer science con
 
 ## Contents
 
-- **cp-notes.tex**: Competitive programming notes covering:
-  - Algorithms (binary exponentiation, binary search)
-  - Concepts (bitwise operators, fast division)
-  - Data structures (stack)
-  - Useful code snippets
+- **cp-notes.tex**: Notes related to Data Structures and Algorithms, Competitive Programming, and various algorithms.
 
-- **sicp-notes.tex**: Structure and Interpretation of Computer Programs (SICP) notes covering:
-  - Programming language fundamentals
-  - Evaluation methods (substitution model, normal order)
-  - Conditional expressions
-  - Functions as building blocks
-
-## Requirements
-
-- LaTeX distribution (TeX Live or MiKTeX recommended)
-- The `minted` package for code syntax highlighting
-- Python with Pygments (`pip install Pygments`)
+- **sicp-notes.tex**: Notes based on [Source Academy's](https://sourceacademy.org/sicpjs/) *Structure and Interpretation of Computer Programs* in JavaScript.
 
 ## Usage
 
